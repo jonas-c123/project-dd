@@ -1,16 +1,26 @@
 # Project DD
 
-用于 Codex 的公开信息尽调 Skill。输入公司名、官网或企业编号，即可获得一份带来源的四栏简报，用于接洽前了解公司背景、监管与声誉风险，以及与 United Stables（U）的业务关联。
+用于 Codex 和 Claude Code 的公开信息尽调 Skill。输入公司名、官网或企业编号，即可获得一份带来源的四栏简报，用于接洽前了解公司背景、监管与声誉风险，以及与 United Stables（U）的业务关联。
 
 ## 安装
 
-在 GitHub 仓库页面选择 **Code → Download ZIP**。解压后，把内层 `project-dd` 文件夹复制到 `~/.agents/skills/`，确认文件位置为：
+电脑上已有 Node.js 时，在终端复制运行对应的一条命令。
 
-```text
-~/.agents/skills/project-dd/SKILL.md
+**Codex**
+
+```bash
+npx -y skills add jonas-c123/project-dd --skill project-dd --agent codex --global --yes
 ```
 
-如果 Codex 里没有出现该 Skill，重启后再试。也可以在 Codex 中调用 `$skill-installer`，并提供 [Skill 文件夹的 GitHub 链接](https://github.com/jonas-c123/project-dd/tree/main/project-dd)。
+**Claude Code**
+
+```bash
+npx -y skills add jonas-c123/project-dd --skill project-dd --agent claude-code --global --yes
+```
+
+两条命令分别安装到对应工具的个人 Skill 目录。你也可以把对应命令直接发给 Codex 或 Claude Code，请它执行安装。
+
+也可以在 GitHub 选择 **Code → Download ZIP**，把解压后的内层 `project-dd` 文件夹复制到 Codex 的 `~/.agents/skills/` 或 Claude Code 的 `~/.claude/skills/`。
 
 ## 使用
 
@@ -18,6 +28,12 @@
 
 ```text
 $project-dd 帮我对 Predict.fun 做公开尽调
+```
+
+在 Claude Code 输入：
+
+```text
+/project-dd 帮我对 Predict.fun 做公开尽调
 ```
 
 同名公司较多时，可以一起提供官网、注册地或登记号。
