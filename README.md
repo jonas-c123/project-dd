@@ -7,8 +7,7 @@
 打开 Codex 或 Claude Code，把下面这句话直接发给它。
 
 ```text
-请帮我安装这个链接里的 Project DD Skill。
-https://github.com/jonas-c123/project-dd/tree/main/project-dd
+请帮我安装 https://github.com/jonas-c123/project-dd 里的 Project DD Skill。
 ```
 
 ## 使用
