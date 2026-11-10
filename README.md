@@ -4,23 +4,12 @@
 
 ## 安装
 
-电脑上已有 Node.js 时，在终端复制运行对应的一条命令。
+打开 Codex 或 Claude Code，把下面这句话直接发给它。
 
-**Codex**
-
-```bash
-npx -y skills add jonas-c123/project-dd --skill project-dd --agent codex --global --yes
+```text
+请帮我安装这个链接里的 Project DD Skill。
+https://github.com/jonas-c123/project-dd/tree/main/project-dd
 ```
-
-**Claude Code**
-
-```bash
-npx -y skills add jonas-c123/project-dd --skill project-dd --agent claude-code --global --yes
-```
-
-两条命令分别安装到对应工具的个人 Skill 目录。你也可以把对应命令直接发给 Codex 或 Claude Code，请它执行安装。
-
-也可以在 GitHub 选择 **Code → Download ZIP**，把解压后的内层 `project-dd` 文件夹复制到 Codex 的 `~/.agents/skills/` 或 Claude Code 的 `~/.claude/skills/`。
 
 ## 使用
 
